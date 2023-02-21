@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tgdevelops-investment-tracker",
+  "private_key_id": "2ad258b334b2a96822536c9d1e0919dc65b97761",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCSXMeJlwVi6/qL\n+JA7gPmwiPp+iRrWeXJ/Yve6bQykBKa/kH49LKwogSwxk8DITPBgIreFz0O2pZtg\nNTejfaoWnnNydAr2vdMEouS1XVcTIKe1aekr+vhQJDWfPa2UYHQf5LKlVf5esCyC\nWECXchO9odIhr9Lgf7aYDaFwqeGOUefIqvfH/9JncwehaXM2OCS6dNYl+hla1R+k\nmke1gEleSBOpukY+oZf2tqT01GsXhqUss37HX7XjT1Kps3qm8dsJJ08vZ/nbx6c6\nJHLSW7wboD44e7C9k2ye96i0zF6LxzEh3ArPFHS6QjCz1r0hWMcPL0eh8Wzu7PbY\nlUPMnIYBAgMBAAECggEAC4gS0pTbAEm+YkPRvVZylcWdEtYjjq1f54h5Iy+PVObm\n6mXshE5ePAy9WiSdhkqFj9V8ZycG2z+eB8z5lsCCY6jVSLm62WjoVM+uvFlf0Gp8\nvC7dh7EM2meX7/VwlSWqUI74wk0NrxErWJOydxwuUP0MbMoJD9YQIVfFlfZUhp1v\n3/mYiCraRiD4/V7b/glX0A73bKJWGSXpqADPO+w6ulSwp3Kmp19xcL8rOaGB9aeC\nvB9i2MZJlnlMQ0g9GXPZTcjgvGrmwpS0BMR45w9SSvIygMXNEaE33lk3L3lKzTCt\nJp1XB92miZYOxskQXkgUMkfvi8WOwaUrdbKZVGtejwKBgQDK4hq5cGqYcErRFWdc\nKl5rMdz7MvvreUyn9M021AC361cI/4wuAK/124ivCUomj7uOaMEKDcfSTLCH6wz2\naRp4tdtxJxNdeLtYrels7fPz1ire9T8AO83k8k8pfEuHoJRYlSL+bTEr5doLc7Qf\nEWzTCEPBD/vRv91zgk5Bau3DxwKBgQC4rndt01ZWsoDHmO5QnMcEJ4299yUDPnfL\nQYPG2SVm1UKmKWiqvv4cjmuDmfJalcBPoCuFzAFTOg/39OO6OS76IQO0UngAVq4T\n0rtmGSVnVODDI/zD+FMzj40gttTDQvqbTjRX9Hu4H1DM+7l0Buz+15ctC57d4cu1\nd7159vRX9wKBgQCiAe2POPqV4c2MqofP7DFbbgTlPrA2N7WDxRL9/krYkv/8OnxI\n29mm/PhntYZVxp7huDq1+Y0gHIc28fZ26jTuQWILOEXZdSg9RxrIFjeg9dtkEPiP\nCjJ+6RNXsF5r3km3dtfrzWvffvsf+/PQf0ykM8xO5aGTu59ttpcg2+8jTwKBgQCI\ndpJVGrZPdbLmycA+3LnJ/hgkaHx2+y+1hwGCa23RoH+RHEP09w/5tdsH8Tc9bC4g\nKDBAu0+3Wc324INtVVe7B64fDlkRlvsmNq62cJpM0lEKoIrjm5iPHuGfbLmmVtWq\n8IyI+WR51tnzvYV5kKyKWm+gn1eSiIfn3USq3KoMXQKBgCX3VsU412pmb09096Mi\ntpBfiznv+ej1npa1ygvYOYp+xRF20i6bfNJyWjVODNy9c3rbdjgi3CxYvdF5uhKk\n55m27SteCpDjKrjGJ6mMF/ulzwrgZuePEz/ECbHHwPSn8BsiZg1CLfOfuWmRAngq\nRYQABF7D2NtwdP4RLOOJcScn\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-wlz5i@tgdevelops-investment-tracker.iam.gserviceaccount.com",
+  "client_id": "114003507174538564670",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-wlz5i%40tgdevelops-investment-tracker.iam.gserviceaccount.com"
+}
