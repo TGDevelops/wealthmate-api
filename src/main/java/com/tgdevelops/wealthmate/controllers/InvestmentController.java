@@ -19,6 +19,7 @@ import java.util.concurrent.ExecutionException;
 @RequestMapping("/investments")
 public class InvestmentController {
     private static final Logger log = LogManager.getLogger(InvestmentController.class);
+    private String response="";
     @Autowired
     private final InvestmentService investmentService;
     public InvestmentController(InvestmentService investmentService) {
@@ -28,10 +29,12 @@ public class InvestmentController {
             consumes = {MediaType.APPLICATION_JSON_VALUE},
             produces = {MediaType.APPLICATION_JSON_VALUE}
     )
-    public ResponseEntity<ResponseTemplate> createInvestment(@RequestBody Investment investmentPayload,
+    public ResponseEntity<ResponseTemplate> createInvestment(@RequestBody Investment[] investmentPayload,
                                               @RequestHeader("Authorization") String authToken) throws ExecutionException, InterruptedException {
 
-        String response = investmentService.addInvestment(investmentPayload);
+        for(Investment investment:investmentPayload){
+            response = String.format("%s %s",response,investmentService.addInvestment(investment));
+        }
         return new ResponseEntity<>(getResponseTemplate(response), HttpStatus.CREATED);
     }
 
@@ -39,22 +42,25 @@ public class InvestmentController {
             consumes = {MediaType.APPLICATION_JSON_VALUE},
             produces = {MediaType.APPLICATION_JSON_VALUE}
     )
-    public ResponseEntity<ResponseTemplate> deleteInvestment(@RequestParam(value="id") String uuid,
+    public ResponseEntity<ResponseTemplate> deleteInvestment(@RequestBody Investment[] investments,
                                                              @RequestHeader("Authorization") String authToken) throws ExecutionException, InterruptedException {
 
-        String response = investmentService.deleteInvestment(uuid);
-        return new ResponseEntity<>(getResponseTemplate(response), HttpStatus.CREATED);
+        for(Investment investment:investments){
+            response = String.format("%s %s",response,investmentService.deleteInvestment(investment.getId()));
+        }
+        return new ResponseEntity<>(getResponseTemplate(response), HttpStatus.ACCEPTED);
     }
 
     @PostMapping(value="/update",
             consumes = {MediaType.APPLICATION_JSON_VALUE},
             produces = {MediaType.APPLICATION_JSON_VALUE}
     )
-    public ResponseEntity<ResponseTemplate> updateInvestment(@RequestParam(value="id") String uuid,
-                                                             @RequestBody Investment investment,
+    public ResponseEntity<ResponseTemplate> updateInvestment(@RequestBody Investment[] investments,
                                                              @RequestHeader("Authorization") String authToken) throws ExecutionException, InterruptedException {
 
-        String response = investmentService.deleteInvestment(uuid);
+        for(Investment investment:investments){
+            response = String.format("%s %s",response,investmentService.updateInvestment(investment, investment.getId()));
+        }
         return new ResponseEntity<>(getResponseTemplate(response), HttpStatus.CREATED);
     }
 
